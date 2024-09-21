@@ -33,20 +33,35 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
         with:
-          ruby-version: '3.2' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          ruby-version: '3.2' # 이미 설정하신 Ruby 버전
+          bundler-cache: true # 'bundle install'을 자동으로 실행하고 캐시
+          cache-version: 0 # 캐시를 다시 다운로드해야 할 경우 이 숫자를 증가
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 프로젝트에 맞는 Node.js 버전으로 설정 (예: '16' 또는 '18')
+
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Build assets
+        run: npm run build # 프로젝트에 맞는 빌드 스크립트 실행
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
