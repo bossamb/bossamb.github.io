@@ -11,7 +11,6 @@ tags: [Github, blog, Git]
 
 이거 세팅한다고 오랜만에 iTerm2도 설치하고 Git 사용법도 다시 공부하고...! 그래도 예전에 한번 공부해본다고 이것 저것 만져본게 조금은 도움이 된 듯? 👍👍👍
 
-![](image.png)
 <span style="color:grey">*그래도 예전 생각이 나서 ohmyzhs도 설치하고 꾸며놨더니 이쁘다 ✨*</span>
 
 ---
@@ -20,12 +19,13 @@ tags: [Github, blog, Git]
 
 하지만 강력한 `chatGPT의 도움`으로 어찌저찌 블로그 개설까지는 할 수 있었다. 없었으면 포기했다 ^^
 
-![](<스크린샷 2024-09-22 오전 12.34.21.png>)
 <span style="color:grey">*다른거보다 chatGPT는 내 Error를 긁어주면 알아서 답을 찾아줘서 정말 편하다*</span>
 
 
 ### <span style="color:red"> 어쨌거나 저쨌거나 일단 블로그를 만들기는 했는데,</span>
 
-글 쓰는건 또 `Markdown`으로 써야한단다. 미리 알아볼껄 ^^;
+글 쓰는건 또 `Markdown`으로 써야한단다. 미리 알아볼껄 ^^; 
+
+누구나 다 올리는 이미지 첨부조차도 markdown을 안써본 나로써는 매우 어려운 일이다.
 
 네이버 블로그에서 Github Blog로 옮겨가며 글 한번 써보려다가 여러 lanaguage 공부만 엄청하게 생겼다 😂
