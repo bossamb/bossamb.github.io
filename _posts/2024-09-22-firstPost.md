@@ -1,6 +1,7 @@
 ---
 title: Github blog로 이동
 excerpt: 모든게 낯선 Github Blog 개설기
+author: YH
 date: 2024-09-22 00:00:00 +0900
 categories: [Blogging]
 tags: [Github, blog, Git]
